@@ -1,7 +1,9 @@
 language: cpp
 compiler: gcc
+sudo: required
 
 install:
+  - sudo apt-get install libstdc++6 
   - ./install_oclint.sh
 
 script: 
