@@ -1,6 +1,10 @@
 language: cpp
 compiler: gcc
 
+install:
+  - ./install_oclint.sh
+
 script: 
   - ./build.sh
+  - ./do_oclint.sh
   - ./travis_oclint
